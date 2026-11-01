@@ -6,6 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+QLD+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+QLD+Hand:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
@@ -18,25 +24,42 @@
 <body>
 
   <!-- Sidebar starts -->
-
-  Maison Soleil
+<aside class="sidebar">
+<header class="asideheader">
+  <div class="illustrationsun">
+</div>
+<div class="asideheadertext">
+<img src="assets/images/logo.svg" alt="maisonsoleillogo" class="logo">
+</div>
+</header>
 
   <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
+   <nav class="asidenav">
+<button class="navbtns btn1"><img src="assets/images/icon-bed.svg" alt="">Your stay <span class="notif">1</span></button>
+<button class="navbtns hover"><img src="assets/images/icon-house.svg" alt="house">The house</button>
+<button class="navbtns hover"><img src="assets/images/icon-pin.svg" alt="pin">Around town</button>
+<button class="navbtns hover"><img src="assets/images/icon-breakfast-outline.svg" alt="">Breakfast</button>
+<button class="navbtns hover"><img src="assets/images/icon-mail.svg" alt="mail">Messages</button>
+  </nav>
 
   <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
+  <div class="weather">
+  <span class="lightweathertext">TODAY IN CASSIS</span>
+  <span class="heavyweathertext">27°</span>
+  <span class="lightweathertext">Sunny · light breeze</span>
+  </div>
 
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
+
+  <footer class="asidefooter">
+  EST. 1987
+  <br>
+  <br>
+  MAISON SOLEIL · 12 RUE DES OLIVIERS · CASSIS
+  <br>
+  <br>
+  © 2026 MAISON SOLEIL
+  </footer>
+</aside>
 
   <!-- Sidebar ends -->
 
