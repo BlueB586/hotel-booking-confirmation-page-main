@@ -3,11 +3,16 @@
     margin: 0;
 }
 
+.cards {
+    display: flex;
+}
+
 .window {
     display: flex;
     margin: 20px;
     border: 1px solid rgb(220, 199, 148);
-    background-color: hsl(44, 66%, 94%);;
+    background-color: hsl(44, 66%, 94%);
+    padding: 20px;
 }
 
 .logo {
@@ -168,7 +173,7 @@ background-color: rgb(42, 37, 22);
 
 .bookingcards {
     background-color: hsl(40, 60%, 98%);
-    width: 400px;
+    width: fit-content;
     height: fit-content;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
@@ -280,4 +285,168 @@ justify-content: center;
 .paid {
     font-size: 23px;
     font-family: "Fraunces", sans-serif;
+}
+
+.notecard {
+    background-color: hsl(15, 74%, 41%);
+    color: hsl(40, 60%, 98%);
+    width: 350px;
+    height: 435px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background-image: linear-gradient(225deg, hsl(15, 80%, 46%), hsl(15, 74%, 35%));
+    transform: rotate(3deg);
+}
+.welcome {
+    border-top: 1px dashed hsla(40, 60%, 98%, 0.274);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.welcomecard {
+    font-size: small;
+    font-family: "DM Sans", sans-serif;
+    opacity: 70%;
+}
+.margaux {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-style: italic;
+}
+.anotefrom {
+    color: rgba(255, 241, 151, 0.712);
+}
+.yourhost {
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+.notetext {
+    margin-bottom: 160px;
+}
+.roomlagarrigue {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.room {
+font-family: "DM Sans", sans-serif;
+opacity: 50%;
+font-size: x-small;
+}
+.lagarrigue {
+    font-family: "Fraunces", sans-serif;
+}
+.hoverto {
+display: flex;
+justify-content: center;
+padding: 10px;
+gap: 10px;
+}
+.fan {
+    font-family: "DM Sans", sans-serif;
+    opacity: 50%;
+}
+
+.guestinforow {
+    display:flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.infoboxstyles {
+    background-color: hsl(40, 60%, 98%);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 15px;
+    gap: 10px;
+}
+/* .wifibox {
+    min-width: 250px;
+} */
+.key {
+    background-color: hsl(15, 74%, 41%);
+    padding: 6px;
+    border-radius: 8px;
+}
+.arrivalbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: hsl(15, 74%, 41%);
+    margin-bottom: 30px;
+}
+.arrivaltext {
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+}
+.zeroone{
+display: flex;
+margin-left: 125px;
+font-size: x-large;
+font-family: "Fraunces", sans-serif;
+}
+.checkinfromcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.checkinfrom {
+    font-size: x-large;
+    font-family: "Fraunces", sans-serif;
+}
+.satapril {
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+.wifibg {
+     background-color: rgb(93, 93, 206);
+}
+.wifi {
+    color: rgb(93, 93, 206);
+}
+.networkpasswordcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.networkguest {
+    display: flex;
+    justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(219, 219, 219);
+    padding: 5px;
+    border-radius: 10px;
+}
+.network {
+    opacity: 50%;
+}
+.copybtn {
+    font-size: x-small;
+    font-weight: bold;
+    background: none;
+    border: 1px solid rgb(170, 170, 170);
+    color: rgb(170, 170, 170);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.copybtn:hover {
+    color: rgb(219, 219, 219);
+    background-color: rgb(170, 170, 170);;
+}
+.breakfast2 {
+    background-color: rgb(207, 64, 116);
+}
+.breakfastcolor {
+    color: rgb(207, 64, 116);
+}
+.breakfastbox {
+    width: 250px;
+}
+.breakfastzeroone {
+display: flex;
+margin-left: 75px;
+font-size: x-large;
+font-family: "Fraunces", sans-serif;
 }
