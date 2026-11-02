@@ -12,6 +12,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+QLD+Hand:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+QLD+Hand:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
@@ -24,6 +28,7 @@
 <body>
 
   <!-- Sidebar starts -->
+   <div class="window">
 <aside class="sidebar">
 <header class="asideheader">
   <div class="illustrationsun">
@@ -64,50 +69,97 @@
   <!-- Sidebar ends -->
 
   <!-- Main content starts -->
-
-  Booking · Confirmed
-  Bienvenue, Lucia.
-
-  Print receipt
-  Add to calendar
-
+<main>
+<div class="nameandbuttons">
+<div class="name">
+  <span class="bookingconfirmed">BOOKING · CONFIRMED</span>
+  <span class="bienvenuelucia">Bienvenue, <span class="lucia">Lucia.</span></span>
+</div>
+<div class="buttonscontainer">
+  <button class="print buttons">Print receipt</button>
+  <button class="addto buttons">Add to calendar</button>
+</div>
+</div>
   <!-- Booking cards start -->
-
+<div class="bookingcards">
   <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
+   <div class="receiptcontainer">
+<div class="receipt">
+      <span class="smalltext">RECEIPT</span>
+      <span class="boldtext">Your stay</span>
+</div>
+<div class="yourstay">
+  <span class="smalltext">№ MS-2026</span>
+  <span class="smalltext move">0421-AH</span>
+</div>
+</div>
 
-  Your stay
+<div class="checkinoutcontainer">
+<div class="checkin">
+  <span class="smallchecktext">CHECK IN</span>
+  <span class="largechecktext">25 Apr</span>
+  <span class="checktime">Saturday · 15:00</span>
+</div>
+<div class="checkout">
+  <span class="smallchecktext">CHECK OUT</span>
+  <span class="largechecktext">29 Apr</span>
+  <span class="checktime">Wednesday · 11:00</span>
+</div>
+</div>
 
-  Check in
-  25 Apr
-  Saturday · 15:00
+<div class="pricescontainer">
 
-  Check out
-  29 Apr
-  Wednesday · 11:00
+<div class="room prices">
+  <span>Room · La Garrigue · 4 nights</span>
+  <span>€ 620.00</span>
+</div>  
 
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
+<div class="breakfast prices">
+  <span>Breakfast · 2 guests</span>
+  <span>€ 96.00</span>
+</div>
 
-  Total paid
-  € 730.40
+<div class="touristtax prices">
+  <span>Tourist tax</span>
+  <span>€ 14.40</span>
+</div>
 
-  Paid · Wise · GBP
+</div>
+<div class="totalpaidcontainer">
+
+  <div class="totalpaid totalpaidstyles">
+  <span class="totalgbp">TOTAL PAID</span>
+  <span class="paid">€ 730.40</span>
+</div>
+<div class="paidwisegbp totalpaidstyles">
+  <span class="totalgbp">PAID · WISE · GBP</span>
   <!-- Barcode image -->
+   <img src="assets/images/icon-barcode.svg" alt="barcode" class="barcode">
+</div>
 
+  </div>
+  </div>
   <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
+  <div class="notecard">
+
+  <div>
+  WELCOME CARD
+  <img src="assets/images/icon-sun.svg" alt="sun">
+  </div>
+  <div>
+  A note from your host, 
+  Margaux.
+  </div>
+  <div>
   We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
+  </div>
+  <div>
   Room
   La Garrigue
+  </div>
 
+  </div>
+</div>
   <!-- Booking cards end -->
 
   <!-- Guest info row starts -->
@@ -136,9 +188,9 @@
   Served 8 - 10:30
   On the terrace
   Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
   <!-- Guest info row ends -->
-
+</main>
+</div>
   <!-- Main content ends -->
 
   <footer class="attribution">

@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+.window {
+    display: flex;
+    margin: 20px;
+    border: 1px solid rgb(220, 199, 148);
+    background-color: hsl(44, 66%, 94%);;
+}
+
 .logo {
     margin-bottom: 15px;
 }
@@ -74,7 +81,8 @@ border-radius: 5px;
     width: 250px;
     padding: 10px;
     border-right: 1px solid black;
-    background-color: hsl(41, 100%, 93%);
+    background-color: hsl(44, 66%, 94%);
+    margin-right: 40px;
 }
 
 .weather {
@@ -107,4 +115,169 @@ border-radius: 5px;
     display: flex;
     opacity: 40%;
     font-family: "DM Sans", sans-serif;
+}
+
+.nameandbuttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+.bookingconfirmed{
+opacity: 50%;
+font-family: "DM Sans", sans-serif;
+}
+.bienvenuelucia {
+font-size: xx-large;
+font-weight: 500;
+}
+.lucia {
+    font-style: italic;
+    color: hsl(18, 62%, 47%);
+    font-weight: 600;
+}
+
+.buttonscontainer {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.buttons {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(42, 37, 22);
+    padding: 7px;
+    border-radius: 15px;
+}
+.print {
+color: rgb(42, 37, 22);
+}
+.print:hover {
+color: rgb(255, 253, 246);
+background-color: rgb(87, 76, 42);
+}
+.addto {
+color: rgb(255, 253, 246);
+background-color: rgb(42, 37, 22);
+}
+
+.bookingcards {
+    background-color: hsl(40, 60%, 98%);
+    width: 400px;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    transform: rotate(-3deg);
+    margin-left: 50px;
+}
+
+.receiptcontainer {
+    background-color: hsl(40, 60%, 98%);
+    display: flex;
+    width: 325px;
+    height: 325px;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px;
+    height: fit-content;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+.smalltext {
+    font-size: smaller;
+    opacity: 50%;
+}
+.move {
+    margin-left: 16px;
+}
+.boldtext {
+    font-size: x-large;
+    font-weight: 400;
+}
+.receipt {
+display: flex;
+flex-direction: column;
+}
+.yourstay {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkinoutcontainer {
+    display: flex;
+    padding: 20px;
+    margin-left: 18px;
+    margin-right: 25px;
+    gap: 60px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+.checkin {
+    display: flex;
+    flex-direction: column;
+}
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+.smallchecktext {
+opacity: 50%;
+font-size: small;
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+}
+.largechecktext {
+    font-size: xx-large;
+    margin-bottom: 6px;
+    font-family: "Fraunces", sans-serif;
+}
+.checktime {
+font-size: small;
+opacity: 50%;
+display: flex;
+justify-content: center;
+}
+
+.pricescontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.562);
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-bottom: 10px;
+}
+.prices {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+}
+.touristtax {
+    opacity: 50%;
+}
+
+.totalpaidcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+}
+.totalpaidstyles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+.totalgbp {
+    opacity: 50%;
+}
+.paid {
+    font-size: 23px;
+    font-family: "Fraunces", sans-serif;
 }
