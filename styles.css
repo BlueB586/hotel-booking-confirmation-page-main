@@ -1,6 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
 }
 
 .cards {
@@ -291,7 +296,7 @@ justify-content: center;
     background-color: hsl(15, 74%, 41%);
     color: hsl(40, 60%, 98%);
     width: 350px;
-    height: 435px;
+    height: 475px;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
     padding: 20px;
@@ -348,7 +353,6 @@ gap: 10px;
     font-family: "DM Sans", sans-serif;
     opacity: 50%;
 }
-
 .guestinforow {
     display:flex;
     margin-top: 50px;
@@ -361,9 +365,7 @@ gap: 10px;
     border-radius: 15px;
     gap: 10px;
 }
-/* .wifibox {
-    min-width: 250px;
-} */
+
 .key {
     background-color: hsl(15, 74%, 41%);
     padding: 6px;
@@ -433,7 +435,7 @@ font-family: "Fraunces", sans-serif;
 }
 .copybtn:hover {
     color: rgb(219, 219, 219);
-    background-color: rgb(170, 170, 170);;
+    background-color: rgb(170, 170, 170);
 }
 .breakfast2 {
     background-color: rgb(207, 64, 116);
@@ -446,7 +448,138 @@ font-family: "Fraunces", sans-serif;
 }
 .breakfastzeroone {
 display: flex;
-margin-left: 75px;
+margin-left: 55px;
 font-size: x-large;
 font-family: "Fraunces", sans-serif;
+}
+
+@media (max-width: 960px) {
+    .window {
+        flex-direction: column;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 30px;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .asidenav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .notif {
+        margin-left: auto;
+    }
+
+    .nameandbuttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .buttonscontainer {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .bookingcards {
+        margin-left: 0;
+        width: min(100%, 420px);
+    }
+
+    .notecard {
+        width: min(100%, 420px);
+        height: auto;
+    }
+
+    .guestinforow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .infoboxstyles {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .window {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .asideheader {
+        justify-content: center;
+    }
+
+    .asidenav {
+        grid-template-columns: 1fr;
+    }
+
+    .navbtns {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .weather {
+        margin-top: 20px;
+    }
+
+    .buttonscontainer {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .checkinoutcontainer {
+        gap: 20px;
+        padding: 15px 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pricescontainer,
+    .totalpaidcontainer {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px 10px;
+    }
+
+    .networkguest {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .copybtn {
+        width: 100%;
+    }
+
+    .hoverto {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .arrivalbox {
+        flex-wrap: wrap;
+    }
+
+    .zeroone,
+    .breakfastzeroone {
+        margin-left: auto;
+    }
 }
